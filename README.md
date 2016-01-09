@@ -22,18 +22,25 @@ PHP环境
 1.申请微信企业号并创建应用
 
 2.修改相关id信息
+
   define('CorpID', 'XXXXXX');
+  
   define('Secret', 'XXXXXX');
 
 3.修改应用id
+  
   "agentid": 2,
 
 4.修改接收人id（在通讯录中设置）
+  
   send_text($text,"yywt");
 
 5.网址访问
+  
   http://a.com/send.php?to=yywt&msg=哈哈
+  
   PHP访问
+  
   file_get_contents('http://a.com/send.php?to=yywt&msg='.urlencode('哈哈'));
 
 
