@@ -76,7 +76,7 @@ Class Msg{
 	//写日志
 	private function writeLog($status,$content){
 		$fp = fopen("msg_log", "a");
-		$log_info = "[".$status."][time:".date('Y-m-d H:i:s',time())."] 事件：".$content;
+		$log_info = "[".$status."][time:".date('Y-m-d H:i:s',time())."] 事件：".$content."\n\n";
     	fwrite($fp,$log_info);
     	fclose($fp);
 
